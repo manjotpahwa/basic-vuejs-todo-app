@@ -1,3 +1,9 @@
+import GAuth from 'vue-google-oauth2'
+import Vue from 'vue'
+import { GOOGLE_AUTH_OPTIONS } from "../../config"
+
+Vue.use(GAuth, GOOGLE_AUTH_OPTIONS)
+
 const ID_TOKEN_KEY = "todoApp.gAuthIDToken";
 const ID_TOKEN_EXPIRY = "todoApp.gAuthIDExpiry";
 const ACCOUNT_NAME_KEY = "todoApp.account_name";
@@ -37,7 +43,4 @@ export default {
       }, accountName
     });
   },
-  SaveUnregisteredUser(googleUser) {
-    return store.dispatch("saveUnregisteredUserDetails", googleUser);
-  }
 }

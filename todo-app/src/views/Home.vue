@@ -20,7 +20,7 @@
   </div>
 </template>
 <script>
-import AuthService from "../common/services/auth";
+//import Authenticate from "../common/services/auth";
 export default {
   name: 'home',
   methods: {
@@ -42,8 +42,10 @@ export default {
     padding: 40px 0 20px 0;
     font-family: "Trebuchet MS";
     font-size: 60px;
+    color: white;
   }
   .subtitle {
     font-size: 30px;
+    color: white;
   }
 </style>

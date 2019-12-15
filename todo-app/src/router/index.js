@@ -12,6 +12,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
-    }
+    },
+    {
+      path: '/single-day',
+      name: 'single-day',
+      component: () => import('../views/SingleDayCalendar.vue')
+    },
   ]
 })
