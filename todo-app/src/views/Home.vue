@@ -39,7 +39,6 @@ export default {
     height: 400px;
   }
   .app-body .title {
-    padding: 40px 0 20px 0;
     font-family: "Trebuchet MS";
     font-size: 60px;
     color: white;
